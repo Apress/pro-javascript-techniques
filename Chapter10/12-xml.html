@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Dynamic RSS Feed Widget</title>
+    <!—Load in our generic AJAX function -->
+    <script src="ajax.js"></script>
+    <script>
+        // Wait for the document to be fully loaded
+        window.onload = function(){
+            // Then load the RSS feed using AJAX
+            ajax({
+                // The URL of the RSS feed
+                url: "rss.xml",
+
+                // It's an XML document
+                type: "xml",
+
+                // This function will be executed whenever the request is complete
+                onSuccess: function( rss ) {
+                    // We're going to be inserting all the item titles into the <ol> that
+                    // has an id of "feed"
+                    var feed = document.getElementById("feed");
+
+                    // Grab all the titles out of the RSS XML document
+                    var titles = rss.getElementsByTagName("title");
+                    
+                    // Go through each of the matched item titles
+                    for ( var i = 0; i < titles.length; i++ ) {
+                        // Create an <li> element to house the item title
+                        var li = document.createElement("li");
+
+                        // Set its contents to the title of the item
+                        li.innerHTML = titles[i].firstChild.nodeValue;
+
+                        // and add it into the DOM, in the <ol> element
+                        feed.appendChild( li );
+                    }
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <h1>Dynamic RSS Feed Widget</h1>
+    <p>Check out my RSS feed:</p>
+     <!—This is where the RSS feed is going to be inserted -->
+    <ol id="feed"></ol>
+</body>
+</html>
+

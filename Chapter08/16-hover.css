@@ -1,0 +1,20 @@
+div.hover-wrap {
+    position: relative;
+    display: inline;
+}
+
+div.hover-wrap input.invalid {
+    border: 2px solid red;
+}
+
+div.hover-wrap ul.errors {
+    display: none;
+}
+
+div.hover-wrap label.hover {
+    position: absolute;
+    top: -0.7em;
+    left: 5px;
+    color: #666;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+    <title>cometd client/server test page</title>
+    <script type="text/javascript">
+        // We're going to be logging all interactions to a debug panel
+        djConfig = { isDebug: true };
+    </script>
+    <script type="text/javascript" src="../dojo/dojo.js"></script>
+    <script type="text/javascript">
+         dojo.require("dojo.io.cometd");
+         dojo.addOnLoad(function(){
+             // Set the base URL for all cometd interaction
+             cometd.init({}, "/cometd");
+
+             // Subscribe to a  single point of broadcast
+             // This will watch for all streaming output coming 
+             // from this particular service and log it to the debug panel
+             cometd.subscribe("/foo/bar/baz", false, dojo, "debugShallow");
+
+             // Broadcast two messages to two different services
+             cometd.publish("/foo/bar/baz", { thud: "thonk!"});
+             cometd.publish("/foo/bar/baz/xyzzy", { foo: "A simple message" });
+        });
+    </script>
+    </head>
+    <body></body>
+</html>
+

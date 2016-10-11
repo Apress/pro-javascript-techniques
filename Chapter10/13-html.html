@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>HTML Sports Scores Loaded via AJAX</title>
+    <!—Load in our generic AJAX function -->
+    <script src="ajax.js"></script>
+    <script>
+        // Wait for the document to be fully loaded
+        window.onload = function(){
+            // Then load the RSS feed using AJAX
+            ajax({
+                // The URL of the HTML sports scores
+                url: "scores.html",
+
+                // It's an HTML document
+                type: "html",
+
+                // This function will be executed whenever the request is complete
+                onSuccess: function( html ) {
+                    // We're going to be inserting into the div that has an id of 'scores'
+                    var scores = document.getElementById("scores");
+
+                    // Inject the new HTML into the document
+                    scores.innerHTML = html;
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <h1> HTML Sports Scores Loaded via AJAX </h1>
+     <!—This is where the Sports Scores to be inserted -->
+    <div id="scores"></div>
+</body>
+</html>
+

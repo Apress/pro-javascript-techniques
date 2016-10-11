@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>JsUnit Assertion Tests</title>
+<script src="../app/jsUnitCore.js"></script>
+<script>
+// Test that an expression is  true
+function testAssertTrue() {
+    assertTrue("true should be true", true);
+    assertTrue(true);
+}
+
+// Test that an expression is false
+function testAssertFalse() {
+    assertFalse("false should be false", false);
+    assertFalse(false);
+}
+
+// Tests to see if two arguments are equal to each other
+function testAssertEquals() {
+    assertEquals("1 should equal 1", 1, 1);
+    assertEquals(1, 1);
+}
+
+// Tests to see if they're not equal to each other
+function testAssertNotEquals() {
+    assertNotEquals("1 should not equal 2", 1, 2);
+    assertNotEquals(1, 2);
+}
+// Tests to see if the argument is equal to null
+function testAssertNull() {
+    assertNull("null should be null", null);
+    assertNull(null);
+}
+
+// Of is not equal to null
+function testAssertNotNull() {
+    assertNotNull("1 should not be null", 1);
+    assertNotNull(1);
+}
+
+// plus many many more
+</script>
+</head>
+<body></body>
+</html>
+

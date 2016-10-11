@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Yahoo! UI Demo</title>
+    <!-- Import the main Yahoo UI library -->
+    <script type="text/javascript" src="YAHOO.js"></script>
+
+    <!-- Import the events package -->
+    <script type="text/javascript" src="event.js"></script>
+
+    <!-- Use the imported Yahoo UI library -->
+    <script type="text/javascript">
+        // All Yahoo events and utilities are contained within the YAHOO
+        // namespace, and subdivided into smaller namespaces (like 'util')
+        YAHOO.util.Event.addListener( 'button', 'click', function() {
+            alert( "Thanks for clicking the button!" );
+        });
+    </script>
+</head>
+
+<body>
+    <input type="button" id="button" value="Click Me!"/>
+</body>
+</html>
+

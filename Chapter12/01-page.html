@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script src="dom.js"></script>
+    <script src="delay.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <form action="" method="POST" id="auto">
+        <div id="top">
+            <div id="mhead"><strong>Send Message</strong></div>
+            <div class="light">
+                <label>From:</label>
+                <div class="rest from">
+                    <img src="icons/john_icon.jpg"/>
+                    <strong>John Resig</strong>
+                </div>
+            </div>
+            <div class="query dark">
+                <label>To:</label>
+                <div class="rest">
+                    <img src="indicator.gif" id="qloading"/>
+                    <input type="text" id="q" name="q" autocomplete="off"/>
+                    <div id="results"><div class="suggest">Suggestions:</div><ul></ul></div>
+                </div>
+            </div>
+            <div class="light"><textarea></textarea></div>
+            <div class="submit"><input type="submit" value="&raquo; Send"/></div>
+        </div>
+    </form>
+</body>
+</html>
+

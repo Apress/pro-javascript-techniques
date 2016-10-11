@@ -1,0 +1,42 @@
+form {
+    font-family: Arial;
+    font-size: 14px;
+    width: 300px;
+}
+	
+fieldset {
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+}
+	
+fieldset.login input {
+    width: 125px;
+}
+	
+legend {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+	
+label {
+    display: block;
+    width: 60px;
+    text-align: right;
+    float: left;
+    padding-right: 10px;
+    margin: 5px 0;
+}
+	
+input {
+    margin: 5px 0;
+}
+	
+input.text {
+    padding: 0 0 0 3px;
+    width: 172px;
+}
+	
+input.submit {
+    margin: 15px 0 0 70px;
+}
+

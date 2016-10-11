@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Sample Test</title>
+<script src="js/unittest.js" type="text/javascript"></script>
+<script src="js/suiterunner.js" type="text/javascript"></script>
+</head>
+<body>
+<p id="title">Sample Test</p>
+<script type="text/javascript">
+new Test.Unit.Runner({
+    // Test hiding and showing an element
+    testToggle: function() {with(this) {
+        var title = document.getElementById("title");
+        title.style.display = 'none';
+        assertNotVisible(title, "title should be invisible");
+        element.style.display = 'block';
+        assertVisible(title, "title should be visible");
+    }},
+
+    // Test appending an element to another
+    testAppend: function() {with(this) {
+        var title = document.getElementById("title");
+        var p = document.createElement("p");
+        title.appendChild( p );
+
+        assertNotNull( title.lastChild );
+        assertEqual( title.lastChild, p );
+    }}
+});
+</script>
+</body>
+</html>
+

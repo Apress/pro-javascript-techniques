@@ -1,0 +1,13 @@
+<html>
+<head>
+    <!—The instant the script is run, a new class is attached to the <html> element
+            giving us the ability to know if Javascript is enabled, or not.-->
+    <script>document.documentElement.className = “js”;</script>
+
+    <!—If Javascript is enabled, hide the block of text, which we will fade in later.-->
+    <style>.js #fadein { display: none }</style>
+</head>
+<body>
+    <div id=”fadein”>Block of stuff to fade in…</div>
+</body>
+</html>

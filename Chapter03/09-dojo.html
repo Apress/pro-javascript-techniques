@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Accordion Widget Demo</title>
+    <!— Include the Dojo Framework -->
+    <script type="text/javascript" src="dojo.js"></script>
+    <!— Include the different Dojo Packages -->
+    <script type="text/javascript">
+        // Two different packages are imported and used to create
+        // an Accordian Container widget
+        dojo.require("dojo.widget.AccordionContainer");
+        dojo.require("dojo.widget.ContentPane");
+    </script>
+</head>
+
+<body>
+<div dojoType="AccordionContainer" labelNodeClass="label">
+    <div dojoType="ContentPane" open="true" label="Pane 1">
+        <h2>Pane 1</h2>
+        <p>Nunc consequat nisi vitae quam. Suspendisse sed nunc. Proin…</p>
+    </div>
+    <div dojoType="ContentPane" label="Pane 2">
+        <h2>Pane 2</h2>
+        <p>Nunc consequat nisi vitae quam. Suspendisse sed nunc. Proin…</p>
+    </div>
+    <div dojoType="ContentPane" label="Pane 3">
+        <h2>Pane 3</h2>
+        <p>Nunc consequat nisi vitae quam. Suspendisse sed nunc. Proin…</p>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    font-siz: 14px;
+}
+
+/* Include a nice box around the gallery of image. */
+ul.gallery {
+    list-style: none;
+    padding: 5px;
+    background: #EEE;
+    overflow: auto;
+    border: 1px solid #AAA;
+    margin-top: 0px;
+}
+
+/* Create a standard-width and height box around all of the individual images. */
+ul.gallery li {
+    float: left;
+    margin: 6px;
+    width: 110px;
+    height: 110px;
+    background: #FFF;
+    border: 2px solid #AAA;
+}
+
+/* Horizontal images are 100px wide */
+ul.gallery img {
+    width: 100px;
+    margin: 5px;
+    border: 0px;
+    margin-top: 17px;
+}
+
+/* Vertical images are 100px tall */
+ul.gallery li.tall img {
+    height: 100px;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 17px;
+}
+

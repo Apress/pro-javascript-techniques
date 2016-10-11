@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Introduction to the DOM</title>
+    <script>
+    // We can't manipulate the DOM until the document
+    // is fully loaded
+    window.onload = function(){
+
+        // Find all the <li> elements, to attach the event handlers to them
+        var li = document.getElementsByTagName('li');
+        for ( var i = 0; i < li.length; i++ ) {
+
+            // Attach a mouseover event handler to the <li> element,
+            // which changes the <li>s background to blue.
+            li[i].onmouseover = function() {
+                this.style.backgroundColor = 'blue';
+            };
+
+            // Attach a mouseout event handler to the <li> element
+            // which changes the <li>s background back to its default white
+            li[i].onmouseout = function() {
+                this.style.backgroundColor = 'white';
+            };
+
+        }
+
+    };
+    </script>
+</head>
+<body>
+    <h1>Introduction to the DOM</h1>
+    <p class='test'>There are a number of reasons why the DOM is awesome, here are some:</p>
+    <ul>
+        <li id='everywhere'>It can be found everywhere.</li>
+        <li class='test'>It's easy to use.</li>
+        <li class='test'>It can help you to find what you want, really quickly.</li>
+    </ul>
+</body>
+</html>
+

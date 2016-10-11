@@ -1,0 +1,20 @@
+#gallery_prev, #gallery_next {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 120;
+    width: 60px;
+    text-align: center;
+    font-size: 12px;
+    padding: 4px;
+}
+
+#gallery_prev {
+    left: 0px;
+}
+
+#gallery_prev a, #gallery_next a {
+    color: #000;
+    text-decoration: none;
+}
+

@@ -1,0 +1,21 @@
+<html>
+<head>
+    <style>p { height: 100px; }</style>
+    <script>
+    window.onload = function(){
+        // Locate the paragraph to check the height of
+        var p = document.getElementsByTagName(“p”)[0];
+
+        // Check the height the traditional way
+        alert( p.style.height + “ should be null” );
+
+        // Check the computed value of the height
+        alert( getStyle( p, “height” ) + “ should be 100px” );
+    };
+    </script>
+</head>
+<body>
+    <p>I should be 100 pixels tall.</p>
+</body>
+</html>
+

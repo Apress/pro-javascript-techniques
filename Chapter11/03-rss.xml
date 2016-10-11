@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+<channel>
+	<title>Test Wordpress Web log</title>
+	<link>http://someurl.com/test/</link>
+	<description>Test Web log.</description>
+	<pubDate>Fri, 08 Oct 2006 02:50:23 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0</generator>
+	<language>en</language>
+
+	<item>
+		<title>Test Post</title>
+		<link>http://someurl.com/?p=9</link>
+		<pubDate>Thu, 07 Sep 2006 09:58:07 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		<category>Uncategorized</category>
+		<description><![CDATA[ Post content goes here… ]]></description>
+	</item>
+
+	<!-- A lot more items -->
+</channel>
+</rss>
+

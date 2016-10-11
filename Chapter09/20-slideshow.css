@@ -1,0 +1,19 @@
+div.slideshow {
+    text-align: right;
+    padding: 4px;
+    margin-top: 10px;
+    position: relative;
+}
+
+div.slideshow span {
+    position: absolute;
+    bottom: 3px;
+    left: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.slideshow a {
+    color: #000;
+}
+

@@ -1,0 +1,39 @@
+#gallery {
+    position: absolute;
+    width: 650px;
+    height: 510px;
+    background: #FFF;
+    z-index: 110;
+    display: none;
+}
+
+
+#gallery_title {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+
+#gallery img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 640px;
+    height: 480px;
+    border: 0px;
+    z-index: 115;
+}
+
+#gallery.tall {
+    width: 430px;
+    height: 590px;
+}
+
+#gallery.tall img {
+    width: 420px;
+    height: 560px;
+}
+
